@@ -39,7 +39,7 @@ class MysqlConnection extends IlluminateMySqlConnection
                 'user' => env('DB_USERNAME'),
                 'password' => env('DB_PASSWORD'),
                 'host' => env('DB_HOST'),
-                'driver' => env('DB_CONNECTION'),
+                'driver' => 'pdo_mysql',
             ];
             
             try {
